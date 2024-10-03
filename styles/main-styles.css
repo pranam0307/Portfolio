@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red-color: #eb5d3a;
+  --gray-color: #cecece;
+  --button-border: hsla(240, 2%, 48%, 0.2);
+  --light-black: #121214;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #000;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-bet{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-col{
+  flex-direction: column;
+}
+
+
+/* HEADER STYLES  */
+.header {
+  display: flex;
+  align-items: center;
+  
+  max-width: 1320px;
+  margin: auto;
+  padding: 35px 0px;
+}
+.header .logo h1 {
+  color: #fff;
+}
+.header .list {
+  display: flex;
+  align-items: center;
+  
+}
+.header .list li {
+  padding: 0px 20px;
+}
+.header .list li a {
+  color: var(--gray-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+.header .list li a:hover {
+  color: var(--red-color);
+  transition: 0.3s ease-in;
+}
+.header .list li .active {
+  color: var(--red-color);
+}
+.hire-btn {
+  border: 1px solid var(--button-border);
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hire-btn:hover {
+  background-color: var(--red-color);
+  transition: 0.3s ease-in;
+}
+.menu {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .header {
+    padding: 15px 10px;
+  }
+  .header .logo h1 {
+    font-size: 23px;
+  }
+  .header .list,
+  .hire-btn {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .menu .bar {
+    background-color: #fff;
+    height: 2px;
+    width: 30px;
+    margin-bottom: 7px;
+  }
+}
+
+/* HERO STYLES */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+}
+.hero-card {
+  background-color: var(--light-black);
+}
+.profile {
+  padding: 45px;
+}
+.profile .profile-img img {
+  width: 270px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.profile h2 {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.profile p {
+  color: var(--gray-color);
+  margin-bottom: 35px;
+}
+
+
+.profile .social-media li {
+  padding: 0px 15px;
+}
+.profile .social-media li a {
+  border: 1px solid var(--button-border);
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}

@@ -41,7 +41,17 @@ li {
 .f-col{
   flex-direction: column;
 }
-
+.card {
+  background-color: var(--light-black);
+  border-radius: 18px;
+}
+.m-top1{
+  margin-top: 1rem;
+  
+}
+.p45{
+  padding: 45px;
+}
 
 /* HEADER STYLES  */
 .header {
@@ -118,10 +128,11 @@ li {
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
 }
 .hero-card {
   background-color: var(--light-black);
+  border-radius: 10px;
 }
 .profile {
   padding: 45px;
@@ -152,4 +163,95 @@ li {
   cursor: pointer;
   color: #fff;
   font-size: 20px;
+}
+
+.tagline{
+  padding: 45px;
+  margin-bottom: 1.5rem;
+
+}
+
+.tagline .hello{
+  color: var(--gray-color);
+  margin-bottom: 15px;
+}
+
+.tagline h1{
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.avil{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.avil p{
+  color: var(--gray-color);
+}
+
+.avil .circle{
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+
+}
+
+.tagline .cv{
+ background-color: var(--red-color);
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 20%;
+}
+
+.company{
+  padding: 45px;
+  color: #fff;
+  margin-bottom: 20px;
+
+}
+
+.company h1{
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: 500;
+
+}
+
+.company img{
+  width: 200px;
+}
+
+@media only screen and (max-width: 991px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding: 0px 15px;
+  }
+  .profile,
+  .tagline,
+  .company {
+    padding: 30px;
+  }
+  .profile-img {
+    width: 200px;
+  }
+  .tagline .cv {
+    width: 48%;
+  }
+  .tagline h1,
+  .company h1 {
+    font-size: 25px;
+  }
+  .avil {
+    margin-left: 25px;
+  }
 }

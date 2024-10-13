@@ -1,0 +1,134 @@
+.contact-card {
+  padding: 40px;
+}
+.text-center {
+  text-align: center;
+}
+.contact-card h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.contact-card p {
+  font-size: 16px;
+  color: var(--dark-gray-color);
+}
+.contact-data {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1.5rem;
+}
+.contact-info {
+  border: 1px solid var(--button-border);
+  border-radius: 10px;
+  padding: 50px 30px 20px 40px;
+}
+.contact-info ul li {
+  margin-bottom: 1.8rem;
+}
+.contact-info ul li h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.contact-info ul li i {
+  color: var(--red-color);
+  font-size: 20px;
+}
+.contact-form {
+  border: 1px solid var(--button-border);
+  border-radius: 10px;
+  padding: 40px;
+}
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+.input-card,
+.input-textarea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.input-card label,
+.input-textarea label {
+  color: var(--dark-gray-color);
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+.input-card input {
+  width: 100%;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--button-border);
+  color: #fff;
+}
+.input-card input::placeholder,
+.input-textarea textarea::placeholder {
+  color: #fff;
+}
+.input-textarea textarea {
+  width: 100%;
+  height: 100px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--button-border);
+  color: #fff;
+}
+.contact-form .touch {
+  background-color: var(--red-color);
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 25%;
+  margin-top: 2rem;
+}
+.contact-form .touch i {
+  margin-left: 0.5rem;
+}
+.contact-form .touch:hover {
+  background-color: transparent;
+  border: 1px solid var(--button-border);
+  transition: 0.2s ease-in;
+}
+@media only screen and (max-width: 991px) {
+  .contact-card {
+    margin: 1rem 15px;
+    padding: 25px;
+  }
+  .contact-card h1 {
+    font-size: 30px;
+    padding: 0px 30px;
+  }
+  .contact-data {
+    grid-template-columns: 1fr;
+  }
+  .input-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    margin-bottom: 1.8rem;
+  }
+  .contact-form {
+    padding: 25px;
+  }
+  .contact-card .touch {
+    width: 75%;
+  }
+}
